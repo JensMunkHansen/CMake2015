@@ -1,0 +1,16 @@
+# - Config file for the FooBarUser package
+# It defines the following variables
+#  FOOBARUSER_EXECUTABLE          - the main executable
+
+cmake_minimum_required(VERSION 2.8.9)
+# Use DIRECTORY instead of PATH
+#cmake_minimum_required(VERSION 2.8.12.2)
+
+# Compute paths, FOOBARUSER_CMAKE_DIR is just a variable name, used in CMakeLists.txt
+get_filename_component(FOOBARUSER_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
+
+# Our library dependencies (contains definitions for IMPORTED targets)
+include("${FOOBARUSER_CMAKE_DIR}/FooBarUserTargets.cmake")
+
+# These are IMPORTED targets created by FooBarUserTargets.cmake
+set(FOOBARUSER_EXECUTABLE main)
