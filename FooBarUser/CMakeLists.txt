@@ -28,7 +28,7 @@ set(INSTALL_CMAKE_DIR ${DEF_INSTALL_CMAKE_DIR} CACHE PATH
   "Installation directory for CMake files")
 
 # Pick development version (default)
-find_package(FooBar 0.6)
+find_package(FooBar 0.6 REQUIRED)
 
 set(DYN_LINKING ON)
 
