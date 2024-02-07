@@ -1,2 +1,7 @@
 FooBar/build
 FooBarUser/build
+*~
+*.aux
+*.log
+*.out
+*.pdf
